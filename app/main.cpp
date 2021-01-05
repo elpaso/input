@@ -50,6 +50,7 @@
 #include "variablesmanager.h"
 #include "inputhelp.h"
 #include "fieldsmodel.h"
+#include "projectwizard.h"
 
 #ifdef INPUT_TEST
 #include "test/testmerginapi.h"
@@ -388,6 +389,7 @@ int main( int argc, char *argv[] )
   MerginProjectStatusModel mpsm( localProjects );
   InputHelp help( ma.get(), &iu );
   FieldsModel fm;
+  ProjectWizard pw;
 
   // layer models
   LayersModel lm;
