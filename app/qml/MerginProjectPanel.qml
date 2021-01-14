@@ -625,15 +625,12 @@ Item {
         DelegateButton {
           height: InputStyle.rowHeightHeader
           width: parent.width/2
-          btnWidth: InputStyle.rowHeightHeader * 4
+          btnWidth: InputStyle.rowHeightHeader * 3
           text: qsTr("Create project")
           anchors.centerIn: parent
-          //Layout.alignment: Qt.AlignVCenter
           onClicked: stackView.push(projectWizardComp)
         }
       }
-
-
 
 
       // Toolbar

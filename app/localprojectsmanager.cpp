@@ -115,8 +115,6 @@ void LocalProjectsManager::addMerginProject( const QString &projectDir, const QS
   project.projectName = projectName;
   // version info and status should be updated afterwards
 
-
-  qDebug() << "@! PROJECT ADDED" << projectDir;
   mProjects << project;
   emit localProjectAdded( projectDir );
 }
@@ -320,12 +318,6 @@ ProjectStatus LocalProjectsManager::currentProjectStatus( const LocalProjectInfo
   }
 
   return ProjectStatus::UpToDate;
-}
-
-void LocalProjectsManager::addLocalProject( const QString &projectDir, const QString &projectName )
-{
-  // TODO unused params
-  reloadProjectDir();
 }
 
 void LocalProjectsManager::updateProjectStatus( LocalProjectInfo &project )
