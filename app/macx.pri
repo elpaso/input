@@ -91,6 +91,9 @@ macx:!android {
     LIBS += -L$${GEODIFF_LIB_DIR}
     LIBS += -lgeodiff
 
+    # QGIS-deps
+    INCLUDEPATH += $${DEPS_INCLUDE_DIR}
+
     # PURCHASING stuff (only testing)
     DEFINES += "PURCHASING"
     # Uncomment this like to test the real in-app purchases on MacOS

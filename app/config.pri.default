@@ -50,6 +50,8 @@ macx:!android {
   QGIS_QUICK_DATA_PATH = $${BASE_DIR}/input/app/android/assets/qgis-data
   GEODIFF_INCLUDE_DIR = $${BASE_DIR}/Applications/include
   GEODIFF_LIB_DIR = $${BASE_DIR}/Applications/lib
+  
+  DEPS_INCLUDE_DIR = /opt/QGIS/qgis-deps-0.6.0/stage/include
 }
 
 ios {
