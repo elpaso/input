@@ -33,6 +33,7 @@ macx:!android {
   QGIS_QUICK_DATA_PATH = /Users/runner/work/input/input/input/app/android/assets/qgis-data
   GEODIFF_INCLUDE_DIR = /opt/INPUT/input-sdk-mac-$$(SDK_VERSION)/stage/mac/include
   GEODIFF_LIB_DIR = /opt/INPUT/input-sdk-mac-$$(SDK_VERSION)/stage/mac/lib
+  DEPS_INCLUDE_DIR = /opt/QGIS/qgis-deps-$$(QGIS_DEPS_VERSION)/stage/include
 
   # also setup coverall for macos build
   # --coverage option is synonym for: -fprofile-arcs -ftest-coverage -lgcov
