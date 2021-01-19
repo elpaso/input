@@ -628,9 +628,13 @@ Item {
           height: parent.height
           width: parent.width/2
           btnWidth: InputStyle.rowHeightHeader * 3
+          btnHeight: parent.height
           text: qsTr("Create project")
           anchors.centerIn: parent
-          onClicked: stackView.push(projectWizardComp)
+          onClicked: {
+            __fieldsModel.initModel()
+            stackView.push(projectWizardComp)
+          }
         }
       }
 
@@ -911,7 +915,7 @@ Item {
       objectName: "projectWizard"
       height: projectsPanel.height
       width: projectsPanel.width
-      onBackClicked: {
+      onBack: {
         stackView.popOnePageOrClose()
       }
     }
