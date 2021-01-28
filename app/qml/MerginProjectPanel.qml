@@ -382,10 +382,10 @@ Item {
               if (__inputUtils.hasStoragePermission()) {
                 __fieldsModel.initModel()
                 stackView.push(projectWizardComp)
-            } else {
-                __inputUtils.acquireStoragePermission()
+              } else if (__inputUtils.acquireStoragePermission()) {
+                restartAppDialog.open()
+              }
             }
-          }
          }
 
           Text {
